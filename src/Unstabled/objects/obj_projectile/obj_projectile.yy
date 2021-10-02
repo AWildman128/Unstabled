@@ -1,16 +1,10 @@
 {
-  "spriteId": {
-    "name": "spr_plutonium",
-    "path": "sprites/spr_plutonium/spr_plutonium.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_element",
-    "path": "objects/obj_element/obj_element.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -23,15 +17,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "elements",
-    "path": "folders/Objects/elements.yy",
+    "name": "projectiles",
+    "path": "folders/Objects/elements/projectiles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_plutonium",
+  "name": "obj_projectile",
   "tags": [],
   "resourceType": "GMObject",
 }

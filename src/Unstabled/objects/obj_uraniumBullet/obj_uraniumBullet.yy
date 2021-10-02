@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "spr_uranium",
-    "path": "sprites/spr_uranium/spr_uranium.yy",
+    "name": "spr_uraniumBullet",
+    "path": "sprites/spr_uraniumBullet/spr_uraniumBullet.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_element",
-    "path": "objects/obj_element/obj_element.yy",
+    "name": "obj_projectile",
+    "path": "objects/obj_projectile/obj_projectile.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -24,18 +24,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "elements",
-    "path": "folders/Objects/elements.yy",
+    "name": "projectiles",
+    "path": "folders/Objects/elements/projectiles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_uranium",
+  "name": "obj_uraniumBullet",
   "tags": [],
   "resourceType": "GMObject",
 }

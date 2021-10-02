@@ -1,5 +1,5 @@
-//Sets up general variables for all elements
+//Sets up variables common to all the elements
 ammo = 0;
-decayTime = 7; //in seconds
-firingDelay = 0.33;
-damage = 1;
+decayTime = 7 //in seconds
+firingDelay = 0; //default value, should be overwritten in normal use
+state = gunStates.ready;

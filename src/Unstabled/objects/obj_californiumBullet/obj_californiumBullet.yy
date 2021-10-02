@@ -1,15 +1,15 @@
 {
   "spriteId": {
-    "name": "spr_plutonium",
-    "path": "sprites/spr_plutonium/spr_plutonium.yy",
+    "name": "spr_californiumBullet",
+    "path": "sprites/spr_californiumBullet/spr_californiumBullet.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_element",
-    "path": "objects/obj_element/obj_element.yy",
+    "name": "obj_projectile",
+    "path": "objects/obj_projectile/obj_projectile.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -27,11 +27,11 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "elements",
-    "path": "folders/Objects/elements.yy",
+    "name": "projectiles",
+    "path": "folders/Objects/elements/projectiles.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_plutonium",
+  "name": "obj_californiumBullet",
   "tags": [],
   "resourceType": "GMObject",
 }

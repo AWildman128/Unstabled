@@ -1,10 +1,16 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_thorium",
+    "path": "sprites/spr_thorium/spr_thorium.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_element",
+    "path": "objects/obj_element/obj_element.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
