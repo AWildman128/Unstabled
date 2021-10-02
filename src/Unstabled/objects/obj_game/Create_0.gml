@@ -1,7 +1,16 @@
 //Sets up states
-enum states {
+enum playerStates {
 	normal,
 	dash,
 	damaged, //for I-frames
-	ai
+}
+
+//TODO: figure out these states
+enum aiStates {
+	
+}
+
+enum gunStates {
+	firing,
+	ready
 }

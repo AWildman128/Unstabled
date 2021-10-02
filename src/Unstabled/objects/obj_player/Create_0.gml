@@ -1,5 +1,5 @@
 //Basic creation script for the player sets up states, health, and speeds
-state = states.normal;
+state = playerStates.normal;
 maxHealth = 5; //placeholder value
 currentHealth = maxHealth;
 maxGravity = 0.2;

@@ -5,14 +5,14 @@ keyJump = keyboard_check_pressed(vk_space);
 keyDown = keyboard_check(ord("S"));
 keyDash = keyboard_check_pressed(vk_shift);
 
-if state == states.normal && keyDash {
+if state == playerStates.normal && keyDash {
 	//Starts a timer for the end of the dash event
-	state = states.dash;
+	state = playerStates.dash;
 	alarm_set(0, room_speed * 0.5)
 	dash();
 }
 
 //Executes normal movement otherwise
-else if state == states.normal {
+else if state == playerStates.normal {
 	normalPlayerMovement();
 }
