@@ -12,6 +12,7 @@ function normalPlayerMovement() {
 		friction = 0;
 	}
 	
+	//TODO: Implement platforms
 	//Handles collisions
 	//Checks if it will be meeting in the y direction, and stops the player in y if so
 	if place_meeting(x, y + 1, obj_wall) {

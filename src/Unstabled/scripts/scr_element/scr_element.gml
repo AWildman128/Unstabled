@@ -19,3 +19,26 @@ function uraniumFire() {
 		state = gunStates.firing;
 	}
 }
+
+//Function to fire the plutonium gun
+function plutoniumFire() {
+	if state == gunStates.ready {
+		instance_create_layer(obj_plutonium.x, obj_plutonium.y, "Instances", obj_plutoniumBullet);
+		alarm_set(0, room_speed * firingDelay);
+		
+		//Sets 2 extra alarms for the burst fire function
+		alarm_set(1, room_speed * 0.1);
+		alarm_set(2, room_speed * 0.2);
+		
+		state = gunStates.firing;
+	}
+}
+
+//Function to fire the californium gun
+function californiumFire() {
+	if state == gunStates.ready {
+		instance_create_layer(obj_californium.x, obj_californium.y, "Instances", obj_californiumBullet);
+		alarm_set(0, room_speed * firingDelay);
+		state = gunStates.firing;
+	}
+}
