@@ -11,9 +11,24 @@ function position() {
 	}
 }
 
+//Function to decay to the next weapon
+function decay() {
+	if global.decayIndex != (array_length(global.decayOrder) - 1) {
+		global.decayIndex++;
+		instance_create_layer(0, 0, "Instances", global.decayOrder[global.decayIndex]);
+	}
+
+	instance_destroy();
+}
+
 //Function to fire the uranium gun
 function uraniumFire() {
 	instance_create_layer(obj_uranium.x, obj_uranium.y, "Instances", obj_uraniumBullet);
+	ammo--;
+	if !ammo {
+		decay()
+	}
+	
 	alarm_set(0, room_speed * firingDelay);
 	state = gunStates.firing;
 }
@@ -21,6 +36,11 @@ function uraniumFire() {
 //Function to fire the plutonium gun
 function plutoniumFire() {
 	instance_create_layer(obj_plutonium.x, obj_plutonium.y, "Instances", obj_plutoniumBullet);
+	ammo--;
+	if !ammo {
+		decay();
+	}
+	
 	alarm_set(0, room_speed * firingDelay);
 		
 	//Sets 2 extra alarms for the burst fire function
@@ -33,18 +53,33 @@ function plutoniumFire() {
 //Function to fire the californium gun
 function californiumFire() {
 	instance_create_layer(obj_californium.x, obj_californium.y, "Instances", obj_californiumBullet);
+	ammo--;
+	if !ammo {
+		decay();
+	}
+	
 	alarm_set(0, room_speed * firingDelay);
 	state = gunStates.firing;
 }
 
 function thoriumFire() {
 	instance_create_layer(obj_thorium.x, obj_thorium.y, "Instances", obj_thoriumBullet);
+	ammo--;
+	if !ammo {
+		decay();
+	}
+	
 	alarm_set(0, room_speed * firingDelay);
 	state = gunStates.firing;
 }
 
 function einsteiniumFire() {
 	instance_create_layer(obj_einsteinium.x, obj_einsteinium.y, "Instances", obj_einsteiniumBullet);
+	ammo--;
+	if !ammo {
+		decay();
+	}
+	
 	alarm_set(0, room_speed * firingDelay);
 	state = gunStates.firing;
 }

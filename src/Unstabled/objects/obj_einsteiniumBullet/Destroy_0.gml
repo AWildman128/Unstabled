@@ -13,7 +13,7 @@ var landingY = y;
 
 for (var i = 0; i < array_length(offsets); i++) {
 	with(obj_player) {
-		if !place_meeting((landingX + offsets[i][0]), (landingY + offsets[i][1]), all) {
+		if !place_meeting((landingX + offsets[i][0]), (landingY + offsets[i][1]), obj_wall) {
 			x = landingX + offsets[i][0];
 			y = landingY + offsets[i][1];
 			break;
