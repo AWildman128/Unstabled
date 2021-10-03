@@ -19,15 +19,21 @@ function normalPlayerMovement() {
 		gravity = 0;
 		
 		//Adds friction if not moving
-		if !(keyRight || keyLeft) {
+		if !(keyRight || keyLeft) && state != playerStates.dash {
 			friction = maxFriction;
 		}
 		
-		//Handle jumps in this area too to save an if statement
+		//Handles jumps in this area too to save an if statement
 		if keyJump {
 			vspeed = jumpSpeed;
 			gravity = maxGravity;
 		}
+		
+		//Code to start dashing
+		if keyDash {
+			dash()
+		}
+		
 	}
 	
 	else {
@@ -44,5 +50,18 @@ function normalPlayerMovement() {
 
 //Function to handle player dashing
 function dash() {
-
+	state = playerStates.dash;
+	sprite_index = spr_playerDash;
+	
+	//Sets a timer to reset the dash when over
+	alarm_set(0, room_speed * 0.25);
+	
+	//Gives the character a large burst of speed in the mouse direction
+	if mouse_x > x {
+		hspeed = 10;
+	}
+	
+	else {
+		hspeed = -10
+	}
 }

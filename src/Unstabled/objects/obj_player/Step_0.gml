@@ -5,14 +5,16 @@ keyJump = keyboard_check_pressed(vk_space);
 keyDown = keyboard_check(ord("S"));
 keyDash = keyboard_check_pressed(vk_shift);
 
-if state == playerStates.normal && keyDash {
-	//Starts a timer for the end of the dash event
-	state = playerStates.dash;
-	alarm_set(0, room_speed * 0.5)
-	dash();
+//Executes normal movement
+if state == playerStates.normal {
+	normalPlayerMovement();
 }
 
-//Executes normal movement otherwise
-else if state == playerStates.normal {
-	normalPlayerMovement();
+//Flips the sprite based on mouse position
+if mouse_x > x {
+	image_xscale = 1;
+}
+
+else {
+	image_xscale = -1
 }

@@ -10,6 +10,7 @@
     {"id":{"name":"spr_thoriumBullet","path":"sprites/spr_thoriumBullet/spr_thoriumBullet.yy",},"order":3,},
     {"id":{"name":"obj_character","path":"objects/obj_character/obj_character.yy",},"order":0,},
     {"id":{"name":"spr_einsteiniumBullet","path":"sprites/spr_einsteiniumBullet/spr_einsteiniumBullet.yy",},"order":4,},
+    {"id":{"name":"spr_playerDash","path":"sprites/spr_playerDash/spr_playerDash.yy",},"order":1,},
     {"id":{"name":"scr_element","path":"scripts/scr_element/scr_element.yy",},"order":1,},
     {"id":{"name":"spr_californium","path":"sprites/spr_californium/spr_californium.yy",},"order":3,},
     {"id":{"name":"obj_californiumBullet","path":"objects/obj_californiumBullet/obj_californiumBullet.yy",},"order":4,},
