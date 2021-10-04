@@ -1,4 +1,4 @@
-speed = 7.5; 
+speed = 5; 
 var dir = point_direction(x, y, obj_player.x, obj_player.y);
 direction = dir;
 image_angle = dir;

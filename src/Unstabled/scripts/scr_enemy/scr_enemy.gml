@@ -53,7 +53,7 @@ function vFloaterMovement() {
 
 //Code for throwing enemies
 function thrower() {
-	if point_distance(x, y, obj_player.x, obj_player.y) < (room_speed * 7.5 * 0.75) 
+	if point_distance(x, y, obj_player.x, obj_player.y) < (room_speed * 5 * 0.75) 
 	&& state = aiStates.throwerReady {
 		
 		instance_create_layer(x, y, "Instances", obj_knife);

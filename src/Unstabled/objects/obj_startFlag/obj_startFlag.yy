@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_restart",
-    "path": "sprites/spr_restart/spr_restart.yy",
+    "name": "spr_startFlag",
+    "path": "sprites/spr_startFlag/spr_startFlag.yy",
   },
   "solid": false,
   "visible": true,
@@ -20,17 +20,15 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "ui",
-    "path": "folders/Objects/ui.yy",
+    "name": "terrain",
+    "path": "folders/Objects/terrain.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_restart",
+  "name": "obj_startFlag",
   "tags": [],
   "resourceType": "GMObject",
 }

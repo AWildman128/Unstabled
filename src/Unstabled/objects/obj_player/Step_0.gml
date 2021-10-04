@@ -2,7 +2,6 @@
 keyRight = keyboard_check(ord("D"));
 keyLeft = keyboard_check(ord("A"));
 keyJump = keyboard_check_pressed(vk_space);
-keyDown = keyboard_check(ord("S"));
 keyDash = keyboard_check_pressed(vk_shift);
 
 //Executes normal movement

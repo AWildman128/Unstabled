@@ -73,4 +73,5 @@ function die() {
 	instance_destroy(global.decayOrder[global.decayIndex]);
 	
 	//Resets the menu
+	room_goto(deathRoom);
 }
