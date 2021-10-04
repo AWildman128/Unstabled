@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "projectiles",
-    "path": "folders/Sprites/elements/projectiles.yy",
+    "name": "elements",
+    "path": "folders/Sprites/ui/elements.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_uIcon",

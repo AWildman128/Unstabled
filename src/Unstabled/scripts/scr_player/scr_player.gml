@@ -56,6 +56,7 @@ function dash() {
 	
 	//Sets a timer to reset the dash when over
 	alarm_set(0, room_speed * 0.25);
+	audio_play_sound(snd_dash, 10, false);
 	
 	//Gives the character a large burst of speed in the mouse direction
 	if mouse_x > x {
@@ -71,6 +72,8 @@ function dash() {
 function die() {
 	//Removes the gun
 	instance_destroy(global.decayOrder[global.decayIndex]);
+	
+	audio_play_sound(snd_death, 20, false);
 	
 	//Resets the menu
 	room_goto(deathRoom);

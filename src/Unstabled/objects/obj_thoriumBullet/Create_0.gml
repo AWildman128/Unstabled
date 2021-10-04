@@ -4,3 +4,4 @@ speed = 7.5;
 gravity = 0.2;
 alarm_set(0, 1.5 * room_speed);
 type = immunities.thorium;
+audio_play_sound(snd_thorium, 10, false);
