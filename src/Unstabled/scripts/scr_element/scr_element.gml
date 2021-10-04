@@ -16,6 +16,12 @@ function decay() {
 	if global.decayIndex != (array_length(global.decayOrder) - 1) {
 		global.decayIndex++;
 		instance_create_layer(0, 0, "Instances", global.decayOrder[global.decayIndex]);
+		
+		//Fix for a bug with firing delay
+		with (global.decayOrder[global.decayIndex]) {
+			state = gunStates.firing;
+			alarm_set(0, room_speed * firingDelay);
+		}
 	}
 
 	instance_destroy();

@@ -10,6 +10,14 @@ enum aiStates {
 	
 }
 
+enum immunities {
+	uranium,
+	plutonium,
+	thorium,
+	californium,
+	einsteinium
+}
+
 enum gunStates {
 	firing,
 	ready

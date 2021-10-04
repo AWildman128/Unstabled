@@ -66,3 +66,11 @@ function dash() {
 		hspeed = -10
 	}
 }
+
+//Script to kill the player
+function die() {
+	//Removes the gun
+	instance_destroy(global.decayOrder[global.decayIndex]);
+	
+	//Resets the menu
+}
