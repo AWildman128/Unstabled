@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_californium",
-    "path": "sprites/spr_californium/spr_californium.yy",
+    "name": "spr_einsteinium",
+    "path": "sprites/spr_einsteinium/spr_einsteinium.yy",
   },
   "solid": false,
   "visible": true,
