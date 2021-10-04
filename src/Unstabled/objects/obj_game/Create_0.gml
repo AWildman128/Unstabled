@@ -7,7 +7,8 @@ enum playerStates {
 
 //TODO: figure out these states
 enum aiStates {
-	
+	throwerReady,
+	throwerCooldown
 }
 
 enum immunities {
