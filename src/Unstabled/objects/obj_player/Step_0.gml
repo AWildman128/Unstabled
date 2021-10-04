@@ -12,8 +12,17 @@ if state == playerStates.normal {
 //Flips the sprite based on mouse position
 if mouse_x > x {
 	image_xscale = 1;
+	
+	//Also flips the gun
+	if instance_exists(obj_element) {
+		global.decayOrder[global.decayIndex].image_yscale = 1;
+	}
 }
 
 else {
 	image_xscale = -1
+	
+	if instance_exists(obj_element) {
+		global.decayOrder[global.decayIndex].image_yscale = -1;
+	}
 }
